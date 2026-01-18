@@ -49,9 +49,10 @@ Open the project in Android Studio and let Gradle sync. Then:
 | Module | Description |
 |--------|-------------|
 | `app` | Main application with UI and business logic |
-| `HyntixPdfViewer` | Custom PDF viewer component library (external) |
-| `KotlinPdfium` | PDFium native library Kotlin bindings (external) |
+| `HyntixPdfViewer` | PDF viewer component (Referenced via JitPack by default) |
+| `KotlinPdfium` | Core PDF engine (Referenced via JitPack by default) |
 | `rust/pdf_scanner` | Rust-based PDF scanning utilities |
+
 
 ## Architecture
 
