@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">PDF Manager</string>
+    
+    <!-- Home Screen -->
+    <string name="tab_all">All</string>
+    <string name="tab_recent">Recent</string>
+    <string name="tab_favorites">Favorites</string>
+
+    <string name="no_pdfs_found">No PDFs Found</string>
+    <string name="pull_to_scan">Pull down to scan for PDFs</string>
+    <string name="no_recent_files">No Recent Files</string>
+    <string name="recent_files_hint">PDFs you open will appear here</string>
+    <string name="no_favorites">No Favorites</string>
+    <string name="no_favorites_hint">Star PDFs to add them here</string>
+    
+    <!-- Viewer Screen -->
+
+    <string name="error_loading_pdf">Error loading PDF</string>
+    <string name="password_required">Password Required</string>
+    <string name="password_hint">Password</string>
+    <string name="incorrect_password">Incorrect password</string>
+    <string name="file_corrupt_warning">Cannot open file: File is corrupted or invalid</string>
+    <string name="open">Open</string>
+    <string name="cancel">Cancel</string>
+    <string name="share_pdf">Share PDF</string>
+
+    <string name="back">Back</string>
+    <string name="remove_from_favorites">Remove from Favorites</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="table_of_contents">Table of Contents</string>
+    <string name="share_content_description">Share</string>
+    <string name="no_chapters_found">No chapters found</string>
+
+    
+    <!-- Permissions -->
+    <string name="grant_permission">Grant Permission</string>
+    
+    <!-- Sort Options -->
+    <string name="sort_by_name">Sort by Name</string>
+    <string name="sort_by_date">Sort by Date</string>
+    <string name="sort_by_size">Sort by Size</string>
+    
+    <!-- View Modes -->
+    <string name="switch_to_list">Switch to List View</string>
+    <string name="switch_to_grid">Switch to Grid View</string>
+    
+    <!-- Default App -->
+    <!-- Actions -->
+
+    <string name="search_content_description">Search</string>
+    <string name="settings_content_description">Settings</string>
+    <string name="search_placeholder">Search PDFs…</string>
+    <string name="clear_content_description">Clear</string>
+    <string name="close_search_content_description">Close search</string>
+    <string name="sort_content_description">Sort</string>
+    <string name="remove_content_description">Remove</string>
+    
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="appearance_section">Appearance</string>
+    <string name="app_theme_title">App Theme</string>
+    <string name="theme_system_default">System Default</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="grayscale_mode_title">Grayscale Mode</string>
+    <string name="grayscale_mode_desc">Applies a black &amp; white filter to the entire app</string>
+    <string name="viewer_section">Viewer</string>
+    <string name="keep_screen_awake_title">Keep Screen Awake</string>
+    <string name="keep_screen_awake_desc">Prevents screen from turning off while reading</string>
+    <string name="data_storage_section">Data &amp; Storage</string>
+    <string name="clear_recent_files_title">Clear Recent Files</string>
+    <string name="clear_recent_files_desc">Removes all files from the Recent list</string>
+    <string name="recent_files_cleared_message">Recent files cleared</string>
+    <string name="clear_cache_title">Clear Cache</string>
+    <string name="clear_cache_desc">Frees up space by verifying existing temporary files</string>
+    <string name="cache_cleared_message">Cache cleared</string>
+    <string name="about_section">About</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="open_source_licenses">Open Source Licenses</string>
+    <string name="version">Version</string>
+    
+</resources>

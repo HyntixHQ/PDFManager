@@ -1,0 +1,22 @@
+[package]
+name = "pdf_scanner"
+version = "0.1.0"
+edition = "2021"
+description = "Fast PDF file scanner for Android using Rust"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+jni = "0.21"
+walkdir = "2.4"
+log = "0.4"
+android_logger = "0.14"
+md5 = "0.7"
+
+[profile.release]
+lto = true
+opt-level = "z"
+codegen-units = 1
+panic = "abort"
+strip = true

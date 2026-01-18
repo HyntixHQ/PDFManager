@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Backup rules for Android 11 (API 30) and below.
+   See https://developer.android.com/guide/topics/data/autobackup
+-->
+<full-backup-content>
+    <!-- Include database for recent files and bookmarks -->
+    <include domain="database" path="pdf_viewer_database"/>
+    <include domain="database" path="pdf_viewer_database-shm"/>
+    <include domain="database" path="pdf_viewer_database-wal"/>
+    
+    <!-- Include DataStore preferences -->
+    <include domain="file" path="datastore/settings.preferences_pb"/>
+</full-backup-content>

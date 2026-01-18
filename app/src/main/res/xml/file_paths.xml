@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- External storage root for downloaded files -->
+    <external-path name="external_files" path="." />
+    
+    <!-- External storage directories -->
+    <external-files-path name="external_app_files" path="." />
+    
+    <!-- Cache directory -->
+    <cache-path name="cache" path="." />
+    
+    <!-- Internal files directory -->
+    <files-path name="files" path="." />
+</paths>
