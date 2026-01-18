@@ -25,3 +25,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Settings: Theme, Grayscale mode, Keep screen awake
 - Privacy Policy and Terms of Service
 - Storage permission handling for Android 13+
+
+### Changed
+- Migrated to remote JitPack dependencies for `HyntixPdfViewer` and `KotlinPdfium`.
+- Standardized build system with Gradle 9.1 and JDK 21.
+- Optimized release build with full R8 shrinking and minification.
+

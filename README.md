@@ -57,21 +57,19 @@ cd PDFManager
 
 ### Dependencies
 
-This project depends on `HyntixPdfViewer` and `KotlinPdfium`. You can clone these repositories anywhere on your system.
+By default, this project uses **JitPack** to pull the specialized libraries it depends on:
 
-```bash
-git clone https://github.com/HyntixHQ/HyntixPdfViewer.git
-git clone https://github.com/HyntixHQ/KotlinPdfium.git
-```
+- **HyntixPdfViewer**: `com.github.HyntixHQ:HyntixPdfViewer:1.0.0`
+- **KotlinPdfium**: `com.github.HyntixHQ:KotlinPdfium:1.0.1`
 
-> [!IMPORTANT]
-> After cloning, open [settings.gradle.kts](file:///home/raja/Desktop/Hyntix/apps/PDFManager/settings.gradle.kts) and update the `projectDir` paths to match the locations where you cloned these libraries.
+#### Local Development
 
-```kotlin
-// Example in settings.gradle.kts
-project(":HyntixPdfViewer").projectDir = file("/path/to/HyntixPdfViewer")
-project(":KotlinPdfium").projectDir = file("/path/to/KotlinPdfium")
-```
+If you wish to modify the libraries alongside the app:
+
+1. Clone `HyntixPdfViewer` and `KotlinPdfium` to your system.
+2. Open [`settings.gradle.kts`](file:///home/raja/Desktop/Hyntix/apps/PDFManager/settings.gradle.kts) and uncomment the `include` and `projectDir` lines.
+3. Open [`app/build.gradle.kts`](file:///home/raja/Desktop/Hyntix/apps/PDFManager/app/build.gradle.kts) and swap the JitPack dependency for the local `project` reference.
+
 
 
 ### Build
