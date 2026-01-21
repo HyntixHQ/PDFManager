@@ -17,8 +17,8 @@ android {
         applicationId = "com.hyntix.android.pdfmanager"
         minSdk = 33
         targetSdk = 36
-        versionCode = 2
-        versionName = "1.1"
+        versionCode = 3
+        versionName = "1.1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         
@@ -134,8 +134,8 @@ dependencies {
     // DataStore Preferences
     implementation(libs.androidx.datastore.preferences)
     
-    // PDF Manager - using JitPack
-    implementation("com.github.HyntixHQ:HyntixPdfViewer:1.0.1")
+    // PDF Manager - using local project for debug
+    implementation(project(":HyntixPdfViewer"))
     implementation(libs.phosphor.icons)
     
     // Testing

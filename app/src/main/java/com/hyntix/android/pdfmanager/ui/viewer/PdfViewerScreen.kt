@@ -353,7 +353,7 @@ fun PdfViewerScreen(
                 if (searchJob?.isActive != true) return@launch
                 
                 val matches = pdfViewRef?.pdfFile?.searchPage(pageIndex, trimmedQuery)
-                if (!matches.isNullOrEmpty()) {
+                if (matches?.isNotEmpty() == true) {
                     results[pageIndex] = matches
                     total += matches.size
                     
@@ -794,10 +794,8 @@ fun PdfViewerScreen(
                         totalPages = pageCount
                         // Check if document has text for reflow mode availability
                         // This happens after PDF is fully loaded
-                        scope.launch(Dispatchers.IO) {
-                            val result = pdfViewRef?.pdfFile?.hasAnyText() ?: false
-                            withContext(Dispatchers.Main) { hasText = result }
-                        }
+                        // Note: Skipping text check for now as hasAnyText was removed
+                        hasText = pageCount > 0
                     },
                     onTap = { 
                         // If selection is active, clear it on tap
