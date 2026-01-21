@@ -5,6 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.compose.animation.AnimatedVisibility
 import com.hyntix.android.pdfmanager.R
+import com.hyntix.pdf.viewer.util.FitPolicy
 import androidx.compose.ui.res.stringResource
 import kotlinx.coroutines.delay
 import androidx.compose.animation.slideInHorizontally
@@ -1333,6 +1334,9 @@ fun PdfViewerContent(
                         .apply { if (scrollHandle != null) scrollHandle(scrollHandle) }
                         .spacing(10)
                         .swipeHorizontal(!isVerticalScroll)
+                        .pageFitPolicy(FitPolicy.BOTH)
+                        .fitEachPage(true)
+                        .autoSpacing(!isVerticalScroll) // Auto-spacing for horizontal mode (one page at a time)
                         .pageSnap(!isVerticalScroll || enableSnap) // Page snap only for horizontal OR when temporarily enabled
                         .password(password)
                         .onLoad(loadListener)

@@ -5,6 +5,18 @@ All notable changes to PDF Manager will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-01-21
+
+### Fixed
+- **Improved PDF Gestures**: Upgraded `HyntixPdfViewer` to v1.0.1 to bring carousel-style swipe gestures and improved zoom handling.
+- **Carousel Swipe**: Any light swipe now transitions to the next/previous page smoothly in page-by-page mode.
+- **Zoom Fix**: Pinch/Double-tap zoom no longer triggers accidental page changes.
+- **Horizontal Display**: Pages are now correctly centered and displayed one at a time in horizontal mode.
+
+### Changed
+- Switched dependency to remote JitPack version of `HyntixPdfViewer:1.0.1`.
+- Bumped application version to v1.1 (versionCode 2).
+
 ## [1.0.0] - 2026-01-18
 
 ### Added
