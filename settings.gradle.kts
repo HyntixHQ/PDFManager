@@ -25,7 +25,7 @@ include(":app")
 
 // Use JitPack dependencies instead of local libraries
 // To use local libraries for development, uncomment the following lines:
-include(":HyntixPdfViewer")
-project(":HyntixPdfViewer").projectDir = file("../../libs/HyntixPdfViewer")
-include(":KotlinPdfium")
-project(":KotlinPdfium").projectDir = file("../../libs/KotlinPdfium")
+// include(":HyntixPdfViewer")
+// project(":HyntixPdfViewer").projectDir = file("../../libs/HyntixPdfViewer")
+// include(":KotlinPdfium")
+// project(":KotlinPdfium").projectDir = file("../../libs/KotlinPdfium")

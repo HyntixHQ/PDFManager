@@ -18,7 +18,7 @@ android {
         minSdk = 33
         targetSdk = 36
         versionCode = 3
-        versionName = "1.1.1"
+        versionName = "1.2.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         
@@ -134,8 +134,8 @@ dependencies {
     // DataStore Preferences
     implementation(libs.androidx.datastore.preferences)
     
-    // PDF Manager - using local project for debug
-    implementation(project(":HyntixPdfViewer"))
+    // PDF Manager - using JitPack
+    implementation("com.github.HyntixHQ:HyntixPdfViewer:1.0.2")
     implementation(libs.phosphor.icons)
     
     // Testing

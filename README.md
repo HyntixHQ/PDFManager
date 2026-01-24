@@ -59,7 +59,7 @@ cd PDFManager
 
 By default, this project uses **JitPack** to pull the specialized libraries it depends on:
 
-- **HyntixPdfViewer**: `com.github.HyntixHQ:HyntixPdfViewer:1.0.1`
+- **HyntixPdfViewer**: `com.github.HyntixHQ:HyntixPdfViewer:1.0.2`
 - **KotlinPdfium**: `com.github.HyntixHQ:KotlinPdfium:1.0.1`
 
 #### Local Development
