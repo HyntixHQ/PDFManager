@@ -70,13 +70,16 @@ This application uses the following open-source libraries:
 *   **Navigation Component**: Licensed under the Apache License, Version 2.0.
 
 ### Native Components
-*   **Pdfium (via KotlinPdfium)**: Licensed under the Apache License, Version 2.0.
-*   **Google PDF Library**: Licensed under the Apache License, Version 2.0.
+*   **Pdfium (via KotlinPdfium)**: Licensed under the GNU AGPL v3.0.
+*   **HyntixPdfViewer**: Licensed under the GNU AGPL v3.0.
 
 ### Icons & UI
 *   **Phosphor Icons**: Licensed under the MIT License.
 
 ---
+
+### GNU Affero General Public License, Version 3.0
+The core PDF rendering and viewing components of this application are licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). You can find the full license text in the application repository.
 
 ### Apache License, Version 2.0
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use these files except in compliance with the License. You may obtain a copy of the License at:

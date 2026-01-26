@@ -1,6 +1,6 @@
 # PDF Manager
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)](LICENSE)
 [![Android](https://img.shields.io/badge/Android-13%2B-green.svg)](https://developer.android.com)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.3-blue.svg)](https://kotlinlang.org)
 
@@ -59,8 +59,8 @@ cd PDFManager
 
 By default, this project uses **JitPack** to pull the specialized libraries it depends on:
 
-- **HyntixPdfViewer**: `com.github.HyntixHQ:HyntixPdfViewer:1.0.2`
-- **KotlinPdfium**: `com.github.HyntixHQ:KotlinPdfium:1.0.1`
+- **HyntixPdfViewer**: `com.github.HyntixHQ:HyntixPdfViewer:1.0.3`
+- **KotlinPdfium**: `com.github.HyntixHQ:KotlinPdfium:1.0.3`
 
 #### Local Development
 
@@ -140,7 +140,7 @@ Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU Affero General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
