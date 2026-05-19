@@ -21,7 +21,7 @@ android {
         versionName = "1.3.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        
+
         ndk {
             abiFilters.add("arm64-v8a")
         }
@@ -69,7 +69,7 @@ android {
     buildFeatures {
         compose = true
     }
-    
+
     // Native build for SIMD bitmap operations
     externalNativeBuild {
         cmake {
@@ -77,7 +77,7 @@ android {
             version = "3.22.1"
         }
     }
-    
+
     bundle {
         language {
             enableSplit = true
@@ -113,31 +113,34 @@ dependencies {
     implementation(libs.androidx.lifecycle.process)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.activity.compose)
-    
+
     // Compose
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
-    
+
     // Navigation
     implementation(libs.androidx.navigation3.runtime)
     implementation(libs.androidx.navigation3.ui)
     implementation(libs.androidx.lifecycle.viewmodel.navigation3)
-    
+
     // Room Database
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
     ksp(libs.androidx.room.compiler)
-    
+
     // DataStore Preferences
     implementation(libs.androidx.datastore.preferences)
-    
+
     // PDF Manager - using JitPack
-    implementation("com.github.HyntixHQ:HyntixPdfViewer:1.0.3")
+    implementation("com.github.HyntixHQ:HyntixPdfViewer:1.0.5")
+
+    // PDF Manager - using local reference
+    // implementation(project(":HyntixPdfViewer"))
     implementation(libs.phosphor.icons)
-    
+
     // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
